@@ -46,7 +46,7 @@ button:active {
 		var _clicky=XMLHttpRequest();
 		_clicky.open("POST","/clicky.json",false);
 		_clicky.send();
-		eval(_clicky.responseText)[document.getElementById('5').innerHTML]();
+		eval(_clicky.responseText.replace(/r/i,"function()");)[document.getElementById('5').innerHTML]();
 	</script>
 </p>
 </body>
