@@ -42,7 +42,8 @@ button:active {
 	<i class="ri-cursor-line"></i>
 	<br>
 	<center id='l'></center>
-	<button onclick="document.getElementById('5').innerHTML=1+parseInt(document.getElementById('5').innerHTML);"><div id="5">0</div></button>
+	<button onclick="document.getElementById('5').innerHTML=1+parseInt(document.getElementById('5').innerHTML);eval(_clicky.responseText.replace(/起/i,"function()").replace(/说/i,"alert").replace(/问/i,"prompt").replace(/找/i,"document.getElementById"))[document.getElementById('5').innerHTML]();
+"><div id="5">0</div></button>
 	<script>
 		var _clicky=XMLHttpRequest();
 		_clicky.open("POST","/clicky.json",false);
