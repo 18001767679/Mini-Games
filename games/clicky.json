@@ -1,4 +1,4 @@
 [
 起{说("Hello,I'm a button,so I should be clicked.")}
-起{说("Hello,I'm a button,so I should be clicked.")}
+起{说("YOU CLICKED ME!YAY!")}
 ]
