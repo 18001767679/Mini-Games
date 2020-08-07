@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>The All-Powerful Button</title>
+    </head>
+    <!--
+    
+    This is my entry for the mouseClicked & scene change Primavera challenge.  Have fun with it.
+    
+    If you are wondering why there is like no JS, here's the     reason why.  I put the code on github to keep it cleaner     and so that Oh Noes wouldn't say that it would take too     long to run.  If you want to view the code, go to:
+    
+    https://cdn.jsdelivr.net/gh/Conner1115/ka-projects@48556a06fbd745af7f18185f8913fb0edef6e0b7/button.js
+    
+    
+    You can spin this program off and change how it looks.      Have fun breaking your mouse.
+    
+    To get past click 154, click on the button's base.  try the left and right sides.
+    
+    To get past the click with the carrot gif, look for a small input and enter one of the texts that appear in the GIF.
+    Either "You lied to me" or "Hey, did you know that carrots are good for your eyes?",
+     and then click on the image.
+    
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+    body, html{
+        font-family:'Baloo 2', sans;
+        background:white;
+    }
+    h1, h2 {
+        text-align:center;
+        font-size:35px;
+        z-index:3;
+        position:relative;
+    }
+    #button-graphics{
+        width:150px;
+        height:100px;
+        background:rgb(47, 92, 181);
+        position:absolute;
+        border-radius:0px 0px 50% 50%;
+        bottom:50px;
+        left:225px;
+        z-index:1;
+        animation:pulse-2b 0.5s 1;
+    }
+    #button{
+    position:absolute;
+    bottom:100px;
+    left:225px;
+    width:150px;
+    height:100px;
+    border-radius:100%;
+    border:none;
+    background:rgb(40, 131, 235);
+    outline:none;
+    z-index:2;
+    animation:pulseb 0.5s 1;
+    }
+    #button-base-l{
+        position:absolute;
+        bottom:20px;
+        left:180px;
+        width:150px;
+        height:150px;
+        background:rgb(0, 168, 146);
+        transform:skewX(-20deg);
+    }
+    #button-base-r{
+        position:absolute;
+        bottom:20px;
+        right:180px;
+        width:150px;
+        height:150px;
+        background:rgb(18, 150, 139);
+        transform:skewX(20deg);
+    }
+    #button:hover{
+        cursor:pointer;
+    }
+    #lbs{
+        width:300px;
+        height:200px;
+        border-radius:50%;
+        background:rgb(0, 136, 255);
+        border:none;
+        font-family:'Baloo 2';
+        font-size:40px;
+        outline:none;
+        position:absolute;
+        bottom:20px;
+        left:150px;
+    }
+    #b{
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+    }
+    
+    @keyframes pulse{
+        100%{
+            bottom:70px;
+        }
+    }
+    @keyframes rainbow{
+        20%{
+            background:red;
+        }
+        40%{
+            background:blue;
+        }
+        60%{
+            background:green;
+        }
+        80%{
+            background:orange;
+        }
+        100%{
+            background:salmon;
+        }
+    }
+    @keyframes pulse-2{
+        100%{
+            height:70px;
+        }
+    }
+    @keyframes n{
+        100%{
+            bottom:100px;
+        }
+    }
+    @keyframes n-2{
+        100%{
+            height:100px;
+        }
+    }
+    
+    </style>
+    <body>
+<h1 id = "message"></h1>
+<h2 style = "position:absolute;width:80%;margin-left:10%;top:50%">Clicks: <span id = "clicks">0</span></h2>
+<div id = "entire-b">
+<div id = "button-base-l"></div>
+<div id = "button-base-r"></div>
+
+<div id = "button-graphics"></div>
+<button id = "button"></button>
+</div>
+
+<div id = "lb">
+    <button id = "lbs">Click Me!<br><span id = "bcs">0</span></button>
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src = "https://cdn.jsdelivr.net/gh/Conner1115/ka-projects@4437f4f41419e2fbaf96f41c7aba1f4417bb9370/button.js"></script>
+
+    </body>
+</html>
