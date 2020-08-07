@@ -46,7 +46,7 @@ button:active {
 		var _clicky=new XMLHttpRequest();
 		_clicky.open("GET","/Mini-Games/games/clicky.json?t=" + Math.random(),false);
 		_clicky.send();
-		eval(_clicky.responseText.replace(/起/i,"function()").replace(/说/i,"alert").replace(/问/i,"prompt").replace(/找/i,"document.getElementById"))[document.getElementById('5').innerHTML]();
+		eval(_clicky.responseText.replace(/起/g,"function()").replace(/说/g,"alert").replace(/问/g,"prompt").replace(/找/g,"document.getElementById"))[document.getElementById('5').innerHTML]();
 		
 	</script>
 </p>
